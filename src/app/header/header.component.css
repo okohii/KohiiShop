@@ -1,0 +1,127 @@
+
+.main-header {    
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.main-header__title {    
+    font-size: 80px;
+    letter-spacing: -1.5px;
+    font-family: 'AIRSTREA';
+}
+
+.main-header__title--creme {
+    color: #E2BE8B;
+    font-size:60px;
+}
+
+.main-header__title--marrom {
+    color: #511f1f;
+    font-size:60px;
+}
+
+.main-header__menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-header__menu ul {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.main-header__menu li {
+    list-style-type: none;
+}
+
+.main-header__menu a {
+    display: flex;
+    padding: 10px 10px;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    justify-content: space-around;
+}
+
+.main-header__menu a:hover {
+    background-color: #E2BE8B;
+    color: #fff;
+    border-radius: 60%;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex: 1;
+}
+
+.badge-carrinho {
+    padding: 0px 0px 0px 0px;    
+    border-radius: 4px;
+    color: #511f1f;
+    background-color: #E2BE8B;
+}
+
+.search-form{
+    height: 44px;
+    display: flex;
+}
+
+.search-form input{
+    box-sizing: border-box;
+    height: 56px;
+    padding: 28px;
+    flex:1;
+    background-color: var(--light-gray);
+    color: var(--gray);
+    border: none;
+    transition: all -3s ease-in-out;
+    font-size: 22px;
+}
+
+.search-form button{
+    width: 56px;
+    height: 56px;
+    background-color: #E2BE8B;
+    border:none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .main-header__menu {
+        margin-top: 20px;
+    }
+
+    .main-header__menu ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .main-header__menu a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .main-header__title {
+        font-size: 40px;
+        text-align: center;
+    }
+}

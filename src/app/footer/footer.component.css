@@ -1,0 +1,55 @@
+.footer {
+    background-color: #E2BE8B;        
+    color: var(--gray);
+    font-size: 18px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    padding: 20px;
+}
+
+/* Definindo regras de estilo para telas menores ou iguais a 768px */
+@media screen and (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #E2BE8B;    
+    font-weight: bold;
+    padding: 20px;
+    color: var(--gray);
+}
+
+.footer__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #511f1f;
+    margin-bottom: 5px;
+}
+
+.footer__about-text {
+    width: 400px;
+    text-align: justify;
+}
+
+
+.footer i {
+    color: var(--orange);
+}
+
+.footer li {
+    margin: 10px 0;
+}
+
+.cp {
+    display: flex;
+    justify-content: center;
+}

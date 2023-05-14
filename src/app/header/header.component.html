@@ -1,0 +1,30 @@
+<header class="main-header">
+    <img routerLink="produtos" src="assets/logo.png" width="500px" alt="KohiiShop">
+    <div class="container-menu">
+        <nav class="main-header__menu">
+            <ul>
+                <li>
+                    <a routerLink="produtos">Produtos</a>
+                </li>
+                <li>
+                    <a routerLink="carrinho">
+                    <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #511f1f;"></i>
+                    Carrinho
+                    <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length}}</span>
+                        </a>
+                </li>
+                <li>
+                    <a routerLink="contato">Contato</a>
+                </li>
+                <li><a><i class="fa-brands fa-facebook" style="color: #511f1f;"></i></a>
+                </li>
+                <li><a><i class="fa-brands fa-instagram" style="color: #511f1f;"></i></a>
+                </li>
+                <li><a><i class="fa-brands fa-twitter" style="color: #511f1f;"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <app-barra-de-pesquisa></app-barra-de-pesquisa>
+    </div>
+</header>
+

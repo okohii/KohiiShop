@@ -1,0 +1,80 @@
+/* Estilos para desktop */
+
+.contact__title {
+    font-size: 44px;
+    color: var(--marrom);
+    font-weight: 700;
+    padding: 8px 0;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 50px;
+    min-width: 300px;
+  }
+  
+  .contact-form button {
+    align-self: flex-end;
+    background-color: var(--marrom);
+    border: none;
+    color: var(--creme);
+    font-size: 20px;
+    padding: 6px 12px;
+    width: 200px;
+  }
+  
+  .contact-form button:hover {
+    filter: brightness(1.1);
+  }
+  
+  .contact__container {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .contact-form input, textarea {
+    background-color: var(--creme);
+  }
+  
+  .contact-form input {
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 2px solid var(--marrom);
+    border-color: var(--marrom);
+  }
+  
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 2px solid var(--marrom);
+    resize: vertical;
+    height: 200px;
+    border-color: var(--marrom);
+  }
+  
+  /* Estilos para dispositivos móveis */
+  
+  @media screen and (max-width: 767px) {
+    .contact__title {
+      font-size: 32px;
+    }
+  
+    .contact-form {
+      margin-bottom: 30px;
+      min-width: auto;
+    }
+  
+    .contact-form button {
+      width: 100%;
+    }
+  
+    .contact-form input, .contact-form textarea {
+      font-size: 14px;
+    }
+  }
+  
